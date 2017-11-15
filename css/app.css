@@ -34,7 +34,7 @@ p {
 
 }
 
-/* PAGE 2 */
+/* PAGE 1 */
 .gone {
   display: inline-block;
   color: red;
@@ -50,8 +50,45 @@ p {
    100% { opacity:  0; }
 
 }
+/*PAGE 2*/
+.roar {
+  display: inline-block;
+  color: red;
 
-/*PAGE 1 animation */
+  animation: away 2s infinite;
+  -webkit-animation: away 2s infinite;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+}
+
+@keyframes roar {
+  0%{background-size: 30px;}
+  100% {background-size: 50px;}
+
+}
+@-webkit-keyframes roar {
+  0%{background-size: 30px;}
+  100% {background-size: 50px;}
+
+}
+
+.dream {
+  display: inline-block;
+  color: red;
+  animation: gone 6s infinite;
+  -webkit-animation: gone 6s infinite;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+
+}
+
+@keyframes dream {
+     0% { opacity: 1; }
+   100% { opacity:  0; }
+
+}
+
+/*INDEX animation */
 .bird {
     width: 128px;
     height: 120px;
