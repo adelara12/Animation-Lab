@@ -37,17 +37,21 @@ p {
 /* PAGE 2 */
 .gone {
   display: inline-block;
-  animation: gone 2s infinite;
-  -webkit-animation: gone 2s infinite;
+  color: red;
+  animation: gone 6s infinite;
+  -webkit-animation: gone 6s infinite;
   animation-delay: 2s;
   -webkit-animation-delay: 2s;
+
 }
 
-/*@keyframes gone {
-  0%{color: red;}
-  100%{}
-}*/
+@keyframes gone {
+     0% { opacity: 1; }
+   100% { opacity:  0; }
 
+}
+
+/*PAGE 1 animation */
 .bird {
     width: 128px;
     height: 120px;
